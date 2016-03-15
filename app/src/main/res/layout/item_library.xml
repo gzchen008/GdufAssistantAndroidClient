@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+
+    <!--序号-->
+    <LinearLayout
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        android:paddingBottom="14dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="13dp">
+
+        <TextView
+            android:id="@+id/tv_bookinfo_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_rotund_corner"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <!--详细信息-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+
+        <!--标题-->
+        <TextView
+            android:id="@+id/tv_bookinfo_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!--出版社-->
+        <TextView
+            android:id="@+id/tv_bookinfo_press"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="出版社：" />
+
+        <!--作者-->
+        <TextView
+            android:id="@+id/tv_bookinfo_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="作者：" />
+
+        <!--索取号-->
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="索取号："-->
+        <!--android:id="@+id/" />-->
+
+    </LinearLayout>
+
+    <!--剩余可借数量-->
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/tv_bookinfo_count"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="#eeeeee"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
